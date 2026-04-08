@@ -82,6 +82,8 @@ pip install -e .
 #### Шаг 1: Откройте настройки MCP-клиента
 
 #### Шаг 2: Добавьте секцию `mcpServers`
+
+**Вариант с `python`:**
 ```json
 {
   "mcpServers": {
@@ -91,7 +93,7 @@ pip install -e .
         "-m",
         "config_finder_mcp.server"
       ],
-      "cwd": "C:\\Users\\user\\Desktop\\LocalMcp\\config-finder-mcp"
+      "cwd": "<path-to-config-finder-mcp>"
     }
   }
 }
@@ -108,13 +110,13 @@ pip install -e .
         "-m",
         "config_finder_mcp.server"
       ],
-      "cwd": "C:\\Users\\user\\Desktop\\LocalMcp\\config-finder-mcp"
+      "cwd": "<path-to-config-finder-mcp>"
     }
   }
 }
 ```
 
-> **Примечание:** замените путь в `cwd` на абсолютный путь к директории `config-finder-mcp` на вашей системе. На Linux/macOS используйте прямые слеши: `/home/user/projects/config-finder-mcp`.
+> **Примечание:** замените `<path-to-config-finder-mcp>` на абсолютный путь к директории проекта. На Windows используйте обратные слеши с экранированием (`C:\\path\\to\\config-finder-mcp`), на Linux/macOS — прямые (`/home/user/projects/config-finder-mcp`).
 
 #### Шаг 3: Перезапустите MCP-клиент
 
@@ -236,7 +238,7 @@ Open your MCP client's settings file (e.g. `settings.json`) and add the `mcpServ
         "-m",
         "config_finder_mcp.server"
       ],
-      "cwd": "C:\\Users\\user\\Desktop\\LocalMcp\\config-finder-mcp"
+      "cwd": "<path-to-config-finder-mcp>"
     }
   }
 }
@@ -253,13 +255,13 @@ Open your MCP client's settings file (e.g. `settings.json`) and add the `mcpServ
         "-m",
         "config_finder_mcp.server"
       ],
-      "cwd": "C:\\Users\\user\\Desktop\\LocalMcp\\config-finder-mcp"
+      "cwd": "<path-to-config-finder-mcp>"
     }
   }
 }
 ```
 
-> **Note:** replace the `cwd` path with the absolute path to the `config-finder-mcp` directory on your system. On Linux/macOS use forward slashes: `/home/user/projects/config-finder-mcp`.
+> **Note:** replace `<path-to-config-finder-mcp>` with the absolute path to the project directory. On Windows use escaped backslashes (`C:\\path\\to\\config-finder-mcp`), on Linux/macOS use forward slashes (`/home/user/projects/config-finder-mcp`).
 
 #### Step 3: Restart the MCP client
 
